@@ -19,6 +19,7 @@
     />
 
     <script src="https://js.stripe.com/v3/"></script>
+    <link rel="shortcut icon" type="image/png" href="assets/logos/favicon.png" >
   </head>
 
 <body style="background-color: #f7f7f7;">
@@ -37,7 +38,7 @@
         <ul>
           <li> <a href="index.html">HOME</a></li>
           <li> <a href="matches.html">MATCHES</a></li>
-          <li> <a href="teams@universitysuperleague.com">Contact Us</a></li>
+          <li> <a href="mailto:teams.universitysuperleague@gmail.com">CONTACT US</a></li>
           <li> <a href="index.html">SIGN UP</a></li>
         </ul>
       </div>
@@ -87,7 +88,7 @@
   <section class="sign-up-form">
     <h1 class="sign-up-form-title">SIGN UP BELOW</h1>
     <div class="sign-up-container">
-      <img class="CupLift" src="assets/Trophy.jpg" alt="Trophy Lift Image">
+      <img class="CupLift" src="assets/footballPics/Trophy.jpg" alt="Trophy Lift Image">
 
       <div class="survey_form_styling">
         <form id="survey-form" action="/submit-form-data" method="POST">
@@ -100,18 +101,13 @@
           <label for="email" id="email-label">Email:</label>
           <input type="email" id="email" required placeholder="Enter your Email">
 
-          <label for="dropdown" id="dropdown-label">What team are you joining?</label>
-          <select id="dropdown" required>
-            <option value="Select">Select</option>
-            <option value="Alpha">Alpha</option>
-            <option value="Beta">Beta</option>
-            <option value="Charlie">Charlie</option>
-            <option value="Delta">Delta</option>
-            <option value="Echo">Echo</option>
-            <option value="Foxtrot">Foxtrot</option>
-            <option value="Golf">Golf</option>
-          </select>
+          <label for="number" id="dropdown-label">Number:</label>
+          <input type="text" id="dropdown" required placeholder="Enter your Whatsapp Number">
 
+
+         
+           
+         
           <input id="submit-btn" class="submitbutton" type="submit" value="Submit & Pay" onclick="submitData(event)">
           <p>After clicking "Submit & Pay", please wait while you are redirected to the secure payment page.</p>
           
@@ -182,6 +178,7 @@
     <div class="footer_container">
 
       <div class="f_column">
+        <img class="footer_logo" src="assets/logos/transparent_logo.png" alt="USL">
         <h4 class="usl_footertitle">University Super League </h4>
         <p>We are a football tournament that hosts students across different disciplines, giving them the chance to meet new
           people and have the opportunity to be crowned this year's
